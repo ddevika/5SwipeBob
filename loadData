@@ -1,0 +1,6 @@
+LOAD DATA INFILE '/Users/ddevika/Documents/NYUPolytech/hackathon/REGISTRAR-2015SpringCompleteClassListing.csv' 
+INTO TABLE nyu_course 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY ',\r\n'
+IGNORE 1 ROWS

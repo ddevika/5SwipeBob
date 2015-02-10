@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CoffeeSpotter</title>
+        <meta name="description" content="coffee, cafe, shops">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome-4.0.3/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/coffee.ico">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <!--<script src="js/coffeespotter.js"></script>-->
+        <script type="text/javascript" src="DataSet.json"></script>
+        <script type="text/javascript" src="CareerLevelFilter.js"></script>
+
+
+        <!--<link rel="stylesheet" href="resources/css/font-awesome-4.0.3/css/font-awesome.min.css">-->
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+            
+        <!--loader web and mobile-->
+         <!--<div class="loader"></div>
+         <div class="loader-mobile"></div>-->
+
+
+
+          <div class="navbar navbar-fixed-top" id="main-menu-bar">
+            <div class="navbar-inner">
+               <div id="tfheader">
+                <form id="tfnewsearch2" method="get" action="index.html">
+                <input type="text" class="tftextinput" name="q" size="21" maxlength="180" placeholder="Input location (e.g Manhattan, Brooklyn)" value="" id='q'><input type="submit" value="Search" class="tfbutton" onclick="load()">
+                <!--formaction="list.html"-->
+                </form>
+                </div>
+
+               <button class="tfbutton2" id='mapMobile' onclick="loadMapMobile()">Map</button>
+                <!--Mobile View Starts Here-->
+                <div id="tfheader-mobile">
+                       <!-- hide on desktop -->
+  
+                <form id="tfnewsearch-mobile" method="get" action="index.html">
+                <input type="text" class="tftextinput-mobile" name="q" size="15" maxlength="150" placeholder="Input location" value= "" id='q-mobile' onchange = "loadPageMobile(); return false;">
+                <input type="submit" value="Search" class="tfbutton" id='searchMobile' onclick="loadListMobile()">
+                <!-- <input type="submit" value="Map" class="tfbutton2" id='mapMobile' onclick="loadMapMobile()"> -->
+                </form>
+                </div>
+
+                 <div class="header-mobile">
+                 </div>
+                <!--Mobile View Ends Here -->
+
+                <div class="header">
+                    <a class="brand visible-phone visible-tablet" href="index.html">
+                      <img src="img/logo.jpg"> 
+                    </a>
+               </div>
+
+             </div>
+           </div>
+
+            <div class="content-list">
+            </div>
+
+            <div class="content-list-mobile">
+            </div>
+
+            <div class = "content">
+              <div id= "store-list"></div>
+          
+              <div id="store-list2"></div>
+
+              <div class ="popular"></div>
+
+              <div id="map"></div>
+
+              <div class="eof"><a href="#">Back to Top</a></div>
+           </div>
+       
+
+           <!--Mobile View Starts Here-->
+          <div class = "content-mobile"></div>
+          <div class= "content-mobile2"></div>
+
+          <div id="backTopmobile">
+           <div class="eof-mobile"><a href="#">Back to Top</a></div>
+         </div>
+
+          <div id="map-mobile"></div>
+          <!--Mobile View Ends Here -->
+
+<!-- Footer -->
+
+<div class="push"></div>
+
+<!--<footer class="">-->
+                  
+        <div class="footer-container">
+          <div class="container-fluid center">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <h4>Follow Us on</h4>
+                <div class="socialIcon">
+                <a href="#"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://twitter.com/coffeespotr"><span class="fa fa-twitter-square"></span></a>
+              </div>
+
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <h5>CoffeeSpotter © 2014</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+       <div class="footer-container-mobile">
+          <div class="container-fluid center">
+            <div class="row">
+              <div class="col-xs-12-mobile col-md-4-mobile">
+                <div class="socialIcon">
+                <a href="#"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://twitter.com/coffeespotr"><span class="fa fa-twitter-square"></span></a>
+              </div>
+
+              </div>
+              <div class="col-xs-13 col-md-4">
+                <h5>CoffeeSpotter © 2014</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--</footer>-->
+
+    </body>
+</html>

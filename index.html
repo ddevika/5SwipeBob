@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CoffeeSpotter</title>
+        <meta name="description" content="coffee, cafe, shops">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome-4.0.3/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/coffee.ico">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--<script src="js/coffeespotter.js"></script>-->
+        <script type="text/javascript" src="DataSet3.json"></script>
+        <script type="text/javascript" src="CareerLevelFilter.js"></script>
+
+
+        <!--<link rel="stylesheet" href="resources/css/font-awesome-4.0.3/css/font-awesome.min.css">-->
+
+    </head>
+    <body onload="load()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+            
+        <!--loader web and mobile-->
+         <!--<div class="loader"></div>
+         <div class="loader-mobile"></div>-->
+
+        askyb - Load JSON File Locally by Javascript Without JQuery
+
+          <div class="navbar navbar-fixed-top" id="main-menu-bar">
+            <div class="navbar-inner">
+               <div id="tfheader">
+                <form id="tfnewsearch2" method="get" action="index.html">
+                <input type="text" class="tftextinput" name="q" size="21" maxlength="180" placeholder="Input location (e.g Manhattan, Brooklyn)" value="" id='q'><input type="submit" value="Search" class="tfbutton" onclick="load()">
+                <!--formaction="list.html"-->
+                </form>
+                </div>
+                </div>
+            </div>
+    </body>
+</html>
